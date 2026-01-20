@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="min-h-screen">
   {{- $isZh := eq .Language.Lang "zh" -}}
-  
+
   <!-- Hero Section -->
   <section class="section bg-gradient-to-br from-primary to-primary-dark text-white">
     <div class="container-custom text-center">
@@ -81,7 +81,7 @@
             {{ if $isZh }}閱讀文件 →{{ else }}Read Docs →{{ end }}
           </a>
         </div>
-        
+
         <div class="card p-8 text-center hover:shadow-xl transition-shadow">
           <div class="text-4xl mb-4">🗳️</div>
           <h3 class="text-xl font-bold mb-3">{{ if $isZh }}治理{{ else }}Governance{{ end }}</h3>
@@ -92,7 +92,7 @@
             {{ if $isZh }}訪問治理 →{{ else }}Visit Governance →{{ end }}
           </a>
         </div>
-        
+
         <div class="card p-8 text-center hover:shadow-xl transition-shadow">
           <div class="text-4xl mb-4">💻</div>
           <h3 class="text-xl font-bold mb-3">GitHub</h3>
@@ -117,27 +117,27 @@
       </h2>
       <div class="flex flex-wrap justify-center gap-6">
         {{- with .youtube -}}
-        <a href="{{ . }}" target="_blank" rel="noopener" class="p-4 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-lg transition-all transform hover:scale-110">
+        <a href="{{ . }}" target="_blank" rel="noopener" class="text-primary p-4 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-lg transition-all transform hover:scale-110">
           <span class="text-2xl">📺 YouTube</span>
         </a>
         {{- end -}}
         {{- with .x -}}
-        <a href="{{ . }}" target="_blank" rel="noopener" class="p-4 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-lg transition-all transform hover:scale-110">
-          <span class="text-2xl">𝕏 Twitter</span>
+        <a href="{{ . }}" target="_blank" rel="noopener" class="text-primary p-4 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-lg transition-all transform hover:scale-110">
+          <span class="text-2xl">𝕏 X</span>
         </a>
         {{- end -}}
         {{- with .reddit -}}
-        <a href="{{ . }}" target="_blank" rel="noopener" class="p-4 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-lg transition-all transform hover:scale-110">
+        <a href="{{ . }}" target="_blank" rel="noopener" class="text-primary p-4 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-lg transition-all transform hover:scale-110">
           <span class="text-2xl">🔴 Reddit</span>
         </a>
         {{- end -}}
         {{- with .substack -}}
-        <a href="{{ . }}" target="_blank" rel="noopener" class="p-4 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-lg transition-all transform hover:scale-110">
+        <a href="{{ . }}" target="_blank" rel="noopener" class="text-primary p-4 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-lg transition-all transform hover:scale-110">
           <span class="text-2xl">📬 Substack</span>
         </a>
         {{- end -}}
         {{- with .threads -}}
-        <a href="{{ . }}" target="_blank" rel="noopener" class="p-4 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-lg transition-all transform hover:scale-110">
+        <a href="{{ . }}" target="_blank" rel="noopener" class="text-primary p-4 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-lg transition-all transform hover:scale-110">
           <span class="text-2xl">🧵 Threads</span>
         </a>
         {{- end -}}
@@ -160,33 +160,33 @@
           </h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 break-all">Base Network</p>
         </a>
-        
+
         <a href="{{ .staking_contract }}" target="_blank" rel="noopener" class="card p-6 hover:shadow-xl transition-shadow">
           <h3 class="font-bold mb-2 text-primary dark:text-primary-light">
             {{ if $isZh }}質押合約{{ else }}Staking Contract{{ end }}
           </h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 break-all">Base Network</p>
         </a>
-        
+
         <a href="{{ .debook_contract }}" target="_blank" rel="noopener" class="card p-6 hover:shadow-xl transition-shadow">
           <h3 class="font-bold mb-2 text-primary dark:text-primary-light">
             {{ if $isZh }}DeBook 合約{{ else }}DeBook Contract{{ end }}
           </h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 break-all">Base Network</p>
         </a>
-        
+
         <a href="{{ .multisig_treasury }}" target="_blank" rel="noopener" class="card p-6 hover:shadow-xl transition-shadow">
           <h3 class="font-bold mb-2 text-primary dark:text-primary-light">
             {{ if $isZh }}多簽金庫{{ else }}Multisig Treasury{{ end }}
           </h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 break-all">Safe Wallet</p>
         </a>
-        
+
         <a href="{{ $.Params.like.coingecko }}" target="_blank" rel="noopener" class="card p-6 hover:shadow-xl transition-shadow">
           <h3 class="font-bold mb-2 text-primary dark:text-primary-light">CoinGecko</h3>
           <p class="text-sm text-gray-600 dark:text-gray-400">{{ if $isZh }}價格追蹤{{ else }}Price Tracking{{ end }}</p>
         </a>
-        
+
         <a href="{{ $.Params.like.uniswap }}" target="_blank" rel="noopener" class="card p-6 hover:shadow-xl transition-shadow">
           <h3 class="font-bold mb-2 text-primary dark:text-primary-light">Uniswap</h3>
           <p class="text-sm text-gray-600 dark:text-gray-400">{{ if $isZh }}去中心化交易所{{ else }}DEX Trading{{ end }}</p>
