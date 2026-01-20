@@ -9,10 +9,10 @@
       <h1 class="text-5xl md:text-6xl font-bold font-heading mb-6 text-balance">{{ .Title }}</h1>
       <p class="text-xl md:text-2xl mb-8 text-secondary-light max-w-3xl mx-auto text-balance">{{ .Params.punchline }}</p>
       <div class="flex flex-wrap justify-center gap-4">
-        <a href="{{ .Params.whitepaper }}" target="_blank" rel="noopener" class="btn bg-secondary text-gray-900 hover:bg-secondary-dark">
+        <a href="{{ .Params.whitepaper }}" target="_blank" rel="noopener" class="btn btn-secondary">
           {{ if $isZh }}閱讀白皮書{{ else }}Read Whitepaper{{ end }}
         </a>
-        <a href="https://3ook.com" target="_blank" rel="noopener" class="btn bg-white text-primary hover:bg-gray-100">
+        <a href="https://3ook.com" target="_blank" rel="noopener" class="btn btn-white">
           {{ if $isZh }}訪問 3ook.com{{ else }}Visit 3ook.com{{ end }}
         </a>
       </div>
