@@ -6,18 +6,23 @@
   --color-primary-light: #3a8a97;
   --color-primary-dark: #1a4a52;
   --color-secondary: #50e3c2;
-  --color-secondary-light: #7eefd4;
+  --color-secondary-light: #aaf1e7;
   --color-secondary-dark: #2fc9a8;
   --color-accent: #f7931a;
   --color-accent-light: #ffb454;
   --color-accent-dark: #d97706;
+  --color-brand-text: #4a4a4a;
+  --color-brand-muted: #9b9b9b;
+  --color-brand-bg: #f7f7f7;
+  --color-brand-bg-alt: #d7ecec;
+  --color-brand-bg-tint: #d2f0f0;
 }
 
 /* Light/Dark mode base styles */
 html,
 body {
-  background-color: #f9fafb;
-  color: #111827;
+  background-color: #f7f7f7;
+  color: #4a4a4a;
 }
 
 html.dark,
@@ -64,7 +69,7 @@ html.dark body {
 
 .btn-secondary {
   background-color: var(--color-secondary);
-  color: #111827;
+  color: #333333;
 }
 
 .btn-secondary:hover {
@@ -135,12 +140,12 @@ html.dark .bg-white {
   background-color: #1f2937 !important;
 }
 
-.bg-gray-100 {
-  background-color: #f3f4f6 !important;
+.bg-brand-bg-alt {
+  background: linear-gradient(135deg, #d2f0f0, #f0e6b4) !important;
 }
 
-html.dark .bg-gray-100 {
-  background-color: #111827 !important;
+html.dark .bg-brand-bg-alt {
+  background: #111827 !important;
 }
 
 .bg-gray-800 {
@@ -161,7 +166,7 @@ html.dark .bg-gray-900 {
 
 /* Prose - Markdown Content Styling */
 .prose {
-  color: #374151;
+  color: #4a4a4a;
   max-width: 65ch;
 }
 
@@ -172,7 +177,7 @@ html.dark .bg-gray-900 {
 }
 
 .prose :where([class~="lead"]):not(:where([class~="not-prose"] *)) {
-  color: #4b5563;
+  color: #4a4a4a;
   font-size: 1.25em;
   line-height: 1.6;
   margin-top: 1.2em;
@@ -190,7 +195,7 @@ html.dark .bg-gray-900 {
 }
 
 .prose :where(strong):not(:where([class~="not-prose"] *)) {
-  color: #111827;
+  color: #333333;
   font-weight: 600;
 }
 
@@ -222,11 +227,11 @@ html.dark .bg-gray-900 {
 
 .prose :where(ol > li):not(:where([class~="not-prose"] *))::marker {
   font-weight: 400;
-  color: #6b7280;
+  color: #9b9b9b;
 }
 
 .prose :where(ul > li):not(:where([class~="not-prose"] *))::marker {
-  color: #9ca3af;
+  color: #9b9b9b;
 }
 
 .prose :where(hr):not(:where([class~="not-prose"] *)) {
@@ -239,7 +244,7 @@ html.dark .bg-gray-900 {
 .prose :where(blockquote):not(:where([class~="not-prose"] *)) {
   font-weight: 500;
   font-style: italic;
-  color: #111827;
+  color: #333333;
   border-left-width: 0.25rem;
   border-left-color: #e5e7eb;
   quotes: "\201C" "\201D" "\2018" "\2019";
@@ -249,7 +254,7 @@ html.dark .bg-gray-900 {
 }
 
 .prose :where(h1):not(:where([class~="not-prose"] *)) {
-  color: #111827;
+  color: #333333;
   font-weight: 800;
   font-size: 2.25em;
   margin-top: 0;
@@ -258,7 +263,7 @@ html.dark .bg-gray-900 {
 }
 
 .prose :where(h2):not(:where([class~="not-prose"] *)) {
-  color: #111827;
+  color: #333333;
   font-weight: 700;
   font-size: 1.5em;
   margin-top: 2em;
@@ -267,7 +272,7 @@ html.dark .bg-gray-900 {
 }
 
 .prose :where(h3):not(:where([class~="not-prose"] *)) {
-  color: #111827;
+  color: #333333;
   font-weight: 600;
   font-size: 1.25em;
   margin-top: 1.6em;
@@ -276,7 +281,7 @@ html.dark .bg-gray-900 {
 }
 
 .prose :where(h4):not(:where([class~="not-prose"] *)) {
-  color: #111827;
+  color: #333333;
   font-weight: 600;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
@@ -295,14 +300,14 @@ html.dark .bg-gray-900 {
 }
 
 .prose :where(figcaption):not(:where([class~="not-prose"] *)) {
-  color: #6b7280;
+  color: #9b9b9b;
   font-size: 0.875em;
   line-height: 1.4285714;
   margin-top: 0.8571429em;
 }
 
 .prose :where(code):not(:where([class~="not-prose"] *)) {
-  color: #111827;
+  color: #333333;
   font-weight: 600;
   font-size: 0.875em;
   background-color: #f3f4f6;
@@ -362,7 +367,7 @@ html.dark .bg-gray-900 {
 }
 
 .prose :where(thead th):not(:where([class~="not-prose"] *)) {
-  color: #111827;
+  color: #333333;
   font-weight: 600;
   vertical-align: bottom;
   padding-right: 0.5714286em;

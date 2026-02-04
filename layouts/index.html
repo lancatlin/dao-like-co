@@ -40,7 +40,7 @@
 
   <!-- 3ook.com Section -->
   {{- with index .Params "3ook_com" -}}
-  <section class="section bg-gray-100 dark:bg-gray-900">
+  <section class="section bg-brand-bg-alt dark:bg-gray-900">
     <div class="container-custom">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div class="order-2 md:order-1">
@@ -50,7 +50,7 @@
         </div>
         <div class="order-1 md:order-2">
           <h2 class="text-4xl font-bold font-heading mb-6 text-primary dark:text-primary-light">{{ .title }}</h2>
-          <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">{{ .bio }}</p>
+          <p class="text-lg text-brand-text dark:text-gray-300 mb-6">{{ .bio }}</p>
           <a href="https://3ook.com" target="_blank" rel="noopener" class="btn btn-secondary">
             {{ T "explore_3ook" }}
           </a>
@@ -73,7 +73,7 @@
             <i class="fa-solid fa-book"></i>
           </div>
           <h3 class="text-xl font-bold mb-3">{{ T "documentation" }}</h3>
-          <p class="text-gray-600 dark:text-gray-400 mb-4">
+          <p class="text-brand-muted dark:text-gray-400 mb-4">
             {{ T "documentation_desc" }}
           </p>
           <a href="{{ .docs }}" target="_blank" rel="noopener" class="text-primary hover:text-primary-dark font-semibold inline-flex items-center gap-2 justify-center">
@@ -86,7 +86,7 @@
             <i class="fa-solid fa-landmark-dome"></i>
           </div>
           <h3 class="text-xl font-bold mb-3">{{ T "governance" }}</h3>
-          <p class="text-gray-600 dark:text-gray-400 mb-4">
+          <p class="text-brand-muted dark:text-gray-400 mb-4">
             {{ T "governance_desc" }}
           </p>
           <a href="{{ .governance }}" target="_blank" rel="noopener" class="text-primary hover:text-primary-dark font-semibold inline-flex items-center gap-2 justify-center">
@@ -99,7 +99,7 @@
             <i class="fa-brands fa-github"></i>
           </div>
           <h3 class="text-xl font-bold mb-3">GitHub</h3>
-          <p class="text-gray-600 dark:text-gray-400 mb-4">
+          <p class="text-brand-muted dark:text-gray-400 mb-4">
             {{ T "contribute_desc" }}
           </p>
           <a href="{{ .github }}" target="_blank" rel="noopener" class="text-primary hover:text-primary-dark font-semibold inline-flex items-center gap-2 justify-center">
@@ -168,7 +168,7 @@
 
   <!-- Chain Info -->
   {{- with .Site.Params.chain -}}
-  <section class="section bg-gray-100 dark:bg-gray-900">
+  <section class="section bg-brand-bg-alt dark:bg-gray-900">
     <div class="container-custom">
       <h2 class="text-4xl font-bold font-heading text-center mb-12 text-primary dark:text-primary-light">
         {{ T "chain_info" }}
@@ -178,38 +178,38 @@
           <h3 class="font-bold mb-2 text-primary dark:text-primary-light">
             📑 {{ T "token_contract" }}
           </h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 break-all">Base Network</p>
+          <p class="text-sm text-brand-muted dark:text-gray-400 break-all">Base Network</p>
         </a>
 
         <a href="{{ .staking_contract }}" target="_blank" rel="noopener" class="card p-6 hover:shadow-xl transition-shadow">
           <h3 class="font-bold mb-2 text-primary dark:text-primary-light">
             🥩 {{ T "staking_contract" }}
           </h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 break-all">Base Network</p>
+          <p class="text-sm text-brand-muted dark:text-gray-400 break-all">Base Network</p>
         </a>
 
         <a href="{{ .debook_contract }}" target="_blank" rel="noopener" class="card p-6 hover:shadow-xl transition-shadow">
           <h3 class="font-bold mb-2 text-primary dark:text-primary-light">
             📚 {{ T "debook_contract" }}
           </h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 break-all">Base Network</p>
+          <p class="text-sm text-brand-muted dark:text-gray-400 break-all">Base Network</p>
         </a>
 
         <a href="{{ .multisig_treasury }}" target="_blank" rel="noopener" class="card p-6 hover:shadow-xl transition-shadow">
           <h3 class="font-bold mb-2 text-primary dark:text-primary-light">
             🧑‍🧒‍🧒 {{ T "multisig_treasury" }}
           </h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 break-all">Safe Wallet</p>
+          <p class="text-sm text-brand-muted dark:text-gray-400 break-all">Safe Wallet</p>
         </a>
 
         <a href="{{ $.Site.Params.like.coingecko }}" target="_blank" rel="noopener" class="card p-6 hover:shadow-xl transition-shadow">
           <h3 class="font-bold mb-2 text-primary dark:text-primary-light">🦎 CoinGecko</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400">{{ T "price_tracking" }}</p>
+          <p class="text-sm text-brand-muted dark:text-gray-400">{{ T "price_tracking" }}</p>
         </a>
 
         <a href="{{ $.Site.Params.like.uniswap }}" target="_blank" rel="noopener" class="card p-6 hover:shadow-xl transition-shadow">
           <h3 class="font-bold mb-2 text-primary dark:text-primary-light">🦄 Uniswap</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400">{{ T "dex_trading" }}</p>
+          <p class="text-sm text-brand-muted dark:text-gray-400">{{ T "dex_trading" }}</p>
         </a>
       </div>
     </div>
