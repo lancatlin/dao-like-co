@@ -3,14 +3,12 @@ title: LikeCoin - 驅動 3ook.com
 date: 2026-01-20
 description: LikeCoin 是驅動 3ook.com 的去中心化圖書協議。加入我們的社群，參與出版的去中心化未來。
 image: /assets/likecoin-banner.png
-punchline: LikeCoin 是驅動 3ook.com 的去中心化圖書協議
+punchline: LikeCoin 是 3ook.com 底層的分散式出版協議。
 3ook_com:
-  title: 您的 AI 閱讀夥伴
-  bio: 3ook.com 是一個 AI 驅動的圖書平台，改變您體驗書籍的方式 - 書籍可以閱讀也可以聆聽，由 AI 以不同配音員或作者聲音朗讀。
+  title: 3ook.com
+  bio: 第３代電子書店，滙聚讀者、作者、書店與出版社，共同策展、發布與銷售多元書籍及刊物，運用 AI 及 Web3 技術，保育文化，守護歷史。
 ---
 
-## 什麼是 LikeCoin
+## 什麼是 LikeCoin？
 
-LikeCoin 是一個去中心化協議，驅動數位出版的未來。建立在區塊鏈技術之上，它讓創作者能夠擁有、貨幣化和分發他們的內容，無需中介。
-
-LikeCoin DAO 管理該協議，確保社群驅動的開發和整個生態系統的決策。
+LikeCoin 是一個旨在變革書籍出版的 DeBook（分散式出版）協議。它賦予作者不可竄改的元資料、分散式儲存（IPFS/Arweave），以及更公平的收益分配；讀者則轉化為策展人與持分者，並能參與治理。其核心是 $LIKE（Base 鏈上的 ERC-20 通證），讀者可將 $LIKE 質押在特定書籍上以示支持，進而影響書籍的排名與曝光度；此外，$LIKE 持有者可參與提案投票。由於書籍質押者能分享銷售收益，使創作者與消費者的利益趨於一致，催生一個由社群驅動的文學生態系，讓書籍以 NFT 的形式由大眾共同策展並共同獲利。
