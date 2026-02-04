@@ -6,6 +6,9 @@ resources/
 # Node
 node_modules/
 
+# Build
+assets/css/output.css
+
 # OS
 .DS_Store
 Thumbs.db
